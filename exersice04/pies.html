@@ -1,0 +1,106 @@
+<!DOCTYPE .html>
+<html <head>
+<meta charset="utf-8">
+<title>Οι πίτες του πίτου</title>
+</head>
+
+<body>
+  <header>
+    <h2>Οι πίτες του πίτου</h2>
+    <p>Πάρε μου μια πίτα</p>
+    <nav>
+      <ul>
+        <li> <a href="store.html">Κατάστημα</a></li>
+        <li> <a href="pies.html">Πίτες</a></li>
+        <li> <a href="contact.html">Επικοινωνία</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1><a href="index.html">Αρχική σελίδα</a></h1>
+    <article>
+      <h2>Οι πίτες μας</h2>
+      <ul>
+        <li>Σπανακόπιτα 4&euro;</li>
+        <li>Μανιταρόπιτα 5.5&euro;</li>
+        <li>Πρασόπιτα 3.5&euro;</li>
+        <li>Μπουρέκι 4.5&euro;</li>
+      </ul>
+      <p>Καλωσόρισμα</p>
+        </article>
+    <article>
+      <h2>Οι πίτες μας στο χώρο σας!</h2>
+      <p>
+        Ωράριο λήψης παραγγελιών (18:00-22:00)
+      </p>
+      <fieldset>
+        <legend> Πληροφορίες Παράδοσης:</legend>
+
+      <form  action="/sendDta" method="post">
+        <label for="txtfirstlastname">Ονοματεπώνυμο</label>
+        <input type="text"id="txtfirstlastname" name=" firstlastname" maxlength="30"required>(*)
+        <br>
+        <label for="txtaddress">Διεύθυνση (Οδός-Αριθμός):</label>
+        <input type="text" id="txtaddress" name="address"required>(*)
+        <br>
+        <label for="txtarea">Περιοχή:</label>
+        <select id="txtarea" name="area">
+          <option value="Ampelkipoi">Αμπελόκηποι</option>
+            <option value="Nikaia">Νίκαια</option>
+              <option value="Keratsini">Κερατσίνι</option>
+        </select>
+        <br>
+        <label for="txtemail">E-mail:</label>
+        <input type="email"id="txtemail" name="email" >
+        <br>
+        <label for="txtdelivery">Ειδικές πληροφορίες για την παράδοση:</label>
+        <textarea id="txtdelivery"name="delivery" rows="8" cols="40"></textarea>
+        <br>
+        <label>(*) Τα πεδία είναι υποχρεωτικά</label>
+        </fieldset>
+        <br>
+        <fieldset>
+          <legend>Παραγγελία:</legend>
+          <ul>
+            <li>Σπανακόπιτες: <textarea name="name" rows="1" cols="4"></textarea></li>
+
+            <li>Μανιταρόπιτες: <textarea name="name" rows="1" cols="4"></textarea></li>
+            <li>Κασσερόπιτες: <textarea name="name" rows="1" cols="4"></textarea></li>
+            <li>Μπουρέκι: <textarea name="name" rows="1" cols="4"></textarea></li>
+
+
+
+          </ul>
+          <input type="checkbox" id="txtsale" name="prosfora">
+          <label for="txtsale">Ενσωμάτωση προσφοράς στις 10 η 1 πίτα δώρο</label>
+        </fieldset>
+        <br>
+        <fieldset>
+          <legend>Τρόποι Πληρωμής:</legend>
+          <input type="radio"id="txtpayement" name="payement" value="pay-on" checked>
+          <label for="txtpayement">VISA</label>
+          <input type="radio"id="txtpayement" name="payement" value="pay-on">
+          <label for="txtpayement">Μετρητά</label>
+          <input type="radio"id="txtpayement" name="payement" value="pay-on">
+          <label for="txtpayement">Είδος</label>
+        </fieldset>
+        <br>
+        <input type="submit" value="Αποστολή">
+        <input type="reset" value="Καθαρισμός">
+      </form>
+    </article>
+
+  </main>
+  <aside>
+    <h2>Προσφορές</h2>
+    <p>giveaway 1</p>
+    <p>Στις 10 η 1 δώρο</p>
+  </aside>
+  <footer>
+    @copy;Οι πίτες του Πίτου
+  </footer>
+
+
+</body>
+
+</html>
